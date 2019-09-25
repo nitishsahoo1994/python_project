@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+ {%block title_block%}Share mail{%endblock%}
+    {%block content%}
+        <h1>Post {{post.title}}</h1>
+        <form>
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" class='btn btn-primary btn-success' value="Send this to mail">
+        </form>
+    {%endblock%}

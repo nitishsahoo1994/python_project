@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/blog.css'%}">
+    <meta charset="UTF-8">
+    <title>{%block title_block%}{%endblock%}</title>
+</head>
+<body>
+ <div class="content">
+     {%block content%}
+      <h1>Nitish's blog</h1>
+     {%endblock%}
+ </div>
+ <div class="sidebar">
+     <h2>Nitish's blog</h2>
+     <p>Python Updation</p>
+ </div>
+</body>
+</html>

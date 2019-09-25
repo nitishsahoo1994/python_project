@@ -1,0 +1,32 @@
+.content{
+ width:60%;
+ float:left;
+ padding:0 0 0 30px;
+
+}
+.sidebar{
+ width:40%;
+ float:right;
+ padding:10px;
+
+}
+body{
+
+background-image: url("C:\Users\nsahoo\Desktop\niclas-illg-wzVQp_NRIHg-unsplash.jpg");
+}
+h1{
+text-align:center;
+color:lightblue;
+}
+.title{
+color:#0080ff;
+}
+#date{
+ color:#1a1aff;
+ font-size:12px;
+ font-style:italic;
+}
+input{
+background:greenyellow;
+color:blue;
+}

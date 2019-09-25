@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+ {%block title_block%}Nitish's Blog{%endblock%}
+    {%block content%}
+        <h1>Nitish's blog</h1>
+        {%for post in post_list%}
+            <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+            <p id="date">Post on {{post.publish}} by {{post.author}}</p>
+            Tags:{{post.tag.all|join:', '}}<br>
+
+            {{post.body|truncatewords:30|linebreaks}}
+
+        {%endfor%}
+    {% include 'testapp/pagination.html' with page=post_list %}
+    {%endblock%}
